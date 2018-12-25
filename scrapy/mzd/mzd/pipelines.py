@@ -12,8 +12,8 @@ from scrapy.exceptions import DropItem
 
 
 class OneClass(object):
-	"""docstring for OneClass""" 
-	def get_name(self, str):	
+#    """docstring for OneClass""" 
+	def get_name(self, str):
 		print str + '=============='
 		
 class MyImagesPipeline(ImagesPipeline):

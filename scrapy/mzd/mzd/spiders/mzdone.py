@@ -17,7 +17,8 @@ class VerseItem(scrapy.Spider):
     allowed_domains = ["book.douban.com"]  
     start_urls = ['https://book.douban.com/tag/%E5%8E%86%E5%8F%B2']   
     def parse(self, response): 
-        print '+++++++++++++++++++++++++++++++++++++++++++begin'
+        # print '+++++++++++++++++++++++++++++++++++++++++++begin'
+        # print "asdf"
         sel = Selector(response)  
         book_list = sel.css('#subject_list > ul > li')  
         for book in book_list:  
@@ -37,5 +38,5 @@ class VerseItem(scrapy.Spider):
             except:  
                 pass  
 
-        print '+++++++++++++++++++++++++++++++++++++++++++end'
- 
+#        print '+++++++++++++++++++++++++++++++++++++++++++end'
+
